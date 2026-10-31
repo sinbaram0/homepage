@@ -1,0 +1,89 @@
+<div id="intro-preview" lang="ko">
+  <style>
+    #intro-preview { background:#0a0a0a; color:#f5f5f5; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.7; word-break:keep-all; }
+    #intro-preview * { box-sizing:border-box; }
+    #intro-preview .inner { width:min(1080px,calc(100% - 40px)); margin-inline:auto; }
+    #intro-preview .hero { padding:100px 0 90px; background:radial-gradient(ellipse at 85% 20%,#00e5ff12,transparent 55%); }
+    #intro-preview .eyebrow { margin:0 0 24px; color:#00e5ff; font-size:12px; font-weight:700; letter-spacing:.22em; }
+    #intro-preview h1 { margin:0; font-size:clamp(42px,7.5vw,80px); font-weight:800; line-height:1.2; letter-spacing:-.055em; text-wrap:balance; }
+    #intro-preview h1:after { content:""; display:block; width:72px; height:4px; margin-top:36px; background:#00e5ff; }
+    #intro-preview .description { margin:28px 0 0; color:#a3a3a3; font-size:17px; }
+    #intro-preview section { padding:64px 0; border-top:1px solid #292929; }
+    #intro-preview .label { margin:0 0 12px; color:#00e5ff; font-size:12px; font-weight:700; letter-spacing:.16em; }
+    #intro-preview h2 { margin:0 0 32px; font-size:30px; font-weight:700; letter-spacing:-.04em; line-height:1.4; }
+    #intro-preview .tiles { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+    #intro-preview article { padding:32px 26px; border:1px solid #292929; border-radius:16px; background:#111; transition:border-color .18s,transform .18s; }
+    #intro-preview article:hover { border-color:#00e5ff; transform:translateY(-5px); }
+    #intro-preview .number { color:#00e5ff; font-size:12px; font-weight:600; }
+    #intro-preview h3 { margin:28px 0 14px; font-size:20px; font-weight:700; letter-spacing:-.03em; line-height:1.5; }
+    #intro-preview article p { margin:0; color:#a3a3a3; font-size:15px; }
+    #intro-preview .contact-description { margin:-16px 0 28px; color:#a3a3a3; }
+    #intro-preview .socials { display:flex; flex-wrap:wrap; gap:14px; }
+    #intro-preview .social { display:inline-flex; align-items:center; justify-content:center; width:56px; height:56px; border:1px solid #292929; border-radius:14px; background:#111; color:#f5f5f5; text-decoration:none; }
+    #intro-preview .social:hover { color:#00e5ff; border-color:#00e5ff; }
+    #intro-preview footer { padding:28px 0; border-top:1px solid #292929; color:#a3a3a3; font-size:13px; }
+    @media(max-width:760px) { #intro-preview .tiles { grid-template-columns:1fr; } #intro-preview .hero { padding:80px 0; } #intro-preview section { padding:56px 0; } #intro-preview article { padding:26px; } #intro-preview h3 { margin-top:18px; } }
+    @media(prefers-reduced-motion:reduce) { #intro-preview article { transition:none; } }
+  </style>
+  <header class="hero"><div class="inner">
+    <p class="eyebrow">IT · AI · MARKETING</p>
+    <h1>해보기는 해 봤어?</h1>
+    <p class="description">기술을 탐구하고, 직접 실행하며,<br>새로운 가능성을 만듭니다.</p>
+    <a class="hero-action cursor-interaction" href="#preview-about">제가 하는 일 알아보기 <span aria-hidden="true">↗</span></a>
+  </div></header>
+  <section aria-labelledby="preview-about"><div class="inner">
+    <p class="label">ABOUT</p><h2 id="preview-about">제가 집중하는 일</h2>
+    <div class="tiles">
+      <article><span class="number">01 / IT</span><h3>IT 운영 및 개발</h3><p>안정적인 서비스 운영과 효율적인 시스템 개발로 일상의 문제를 해결합니다.</p></article>
+      <article><span class="number">02 / RESEARCH</span><h3>AI 연구</h3><p>인공지능의 가능성을 탐구하고 실험하며, 아이디어를 실제로 활용할 수 있는 기술로 연결합니다.</p></article>
+      <article><span class="number">03 / MARKETING</span><h3>AI를 이용한 마케팅</h3><p>데이터와 AI를 활용해 고객을 이해하고, 더 효과적인 콘텐츠와 마케팅 경험을 설계합니다.</p></article>
+    </div>
+  </div></section>
+  <section aria-labelledby="preview-contact"><div class="inner">
+    <p class="label">CONTACT</p><h2 id="preview-contact">함께 이야기해요</h2>
+    <p class="contact-description">새로운 아이디어와 협업에 관한 이야기를 기다립니다.</p>
+    <div class="socials">
+      <a class="social" href="mailto:your-email@example.com" aria-label="이메일 보내기" data-tooltip="이메일"><i data-lucide="mail" aria-hidden="true"></i></a>
+      <a class="social" href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub 프로필 (새 탭)" data-tooltip="GitHub"><i data-lucide="github" aria-hidden="true"></i></a>
+      <a class="social" href="https://www.linkedin.com/in/your-username/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn 프로필 (새 탭)" data-tooltip="LinkedIn"><i data-lucide="linkedin" aria-hidden="true"></i></a>
+    </div>
+  </div></section>
+  <footer><div class="inner">호기심을 실행으로, 실행을 가치로.</div></footer>
+  <style>
+    #intro-preview { background:#fff; color:#252044; }
+    #intro-preview .inner { width:min(1080px,calc(100% - 48px)); }
+    #intro-preview .hero { position:relative; isolation:isolate; overflow:hidden; text-align:center; padding:92px 0 84px; background:#f3efff; border-radius:0 0 48px 48px; }
+    #intro-preview .hero:before { content:""; position:absolute; z-index:-1; width:210px; height:210px; border:45px solid #e4daff; border-radius:50%; left:-140px; top:45px; }
+    #intro-preview .hero:after { content:""; position:absolute; z-index:-1; width:110px; height:110px; background:#ffd7bf; border-radius:28px; right:-55px; bottom:40px; transform:rotate(30deg); }
+    #intro-preview .eyebrow { display:inline-block; margin-bottom:25px; padding:7px 16px; border:1px solid #d9caf9; border-radius:100px; background:#fff; color:#6841c6; font-size:11px; letter-spacing:.15em; }
+    #intro-preview h1 { max-width:850px; margin:auto; color:#3b216e; font-size:clamp(38px,7.2vw,76px); line-height:1.2; letter-spacing:-.065em; }
+    #intro-preview h1:after { display:none; }
+    #intro-preview .description { color:#645b76; margin-top:25px; font-size:17px; }
+    #intro-preview .hero-action { display:inline-flex; align-items:center; gap:24px; margin-top:30px; padding:15px 23px; border-radius:9px; background:#ff653f; color:#fff; font-size:15px; font-weight:700; text-decoration:none; box-shadow:0 5px 0 #e64c29; transition:transform .18s; }
+    #intro-preview .hero-action:hover { transform:translateY(-2px); }
+    #intro-preview section { border:0; padding:72px 0; }
+    #intro-preview .label { color:#7752cc; text-align:center; font-size:11px; }
+    #intro-preview h2 { color:#30204e; text-align:center; font-size:32px; }
+    #intro-preview .tiles { gap:18px; }
+    #intro-preview article { position:relative; background:#fff; border:1px solid #e6dff0; border-radius:20px; padding:30px 24px; box-shadow:0 8px 22px #39206407; }
+    #intro-preview article:first-child { background:#faf7ff; }
+    #intro-preview article:nth-child(2) { background:#fff8f2; }
+    #intro-preview article:nth-child(3) { background:#f3faf8; }
+    #intro-preview article:hover { border-color:#9c79df; }
+    #intro-preview .number { display:inline-block; padding:7px 10px; background:#ebe1ff; color:#6640ac; border-radius:7px; font-size:11px; }
+    #intro-preview article:nth-child(2) .number { color:#a34123; background:#ffe4d7; }
+    #intro-preview article:nth-child(3) .number { color:#28634e; background:#dbefe6; }
+    #intro-preview h3 { color:#332348; font-size:20px; margin-top:24px; }
+    #intro-preview article p { color:#716779; }
+    #intro-preview section[aria-labelledby="preview-contact"] { margin:0 24px 32px; border-radius:28px; background:#3b216e; padding:52px 0; }
+    #intro-preview section[aria-labelledby="preview-contact"] .label { color:#d3bafa; }
+    #intro-preview section[aria-labelledby="preview-contact"] h2 { color:#fff; }
+    #intro-preview .contact-description { color:#e0d4f0; text-align:center; }
+    #intro-preview .socials { justify-content:center; }
+    #intro-preview .social { background:#503580; border-color:#775c9d; color:#fff; border-radius:50%; }
+    #intro-preview .social:hover { background:#ff653f; border-color:#ff653f; color:#fff; }
+    #intro-preview footer { border-color:#eee8f4; color:#82768f; text-align:center; }
+    @media(max-width:760px) { #intro-preview .hero { padding:76px 0 64px; border-radius:0 0 32px 32px; } #intro-preview section { padding:52px 0; } #intro-preview section[aria-labelledby="preview-contact"] { margin-inline:16px; } }
+    @media(prefers-reduced-motion:reduce) { #intro-preview .hero-action { transition:none; } }
+  </style>
+</div>
