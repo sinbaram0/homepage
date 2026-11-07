@@ -1,0 +1,57 @@
+:root {
+  color-scheme: dark;
+  --background-color: #0a0a0a;
+  --text-color: #e0e0e0;
+  --accent-color: #00e5ff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* 화면 크기에 맞춰 여백과 글자 크기를 조절합니다. */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: clamp(32px, 8vw, 120px) clamp(24px, 8vw, 120px);
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1040px;
+  margin-inline: auto;
+  padding-block: 16px;
+  padding-inline-start: clamp(20px, 4vw, 48px);
+  border-inline-start: 3px solid var(--accent-color);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(56px, 12vw, 144px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.06em;
+  word-break: keep-all;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.hero-description {
+  margin: clamp(20px, 4vw, 36px) 0 0;
+  font-size: clamp(18px, 3vw, 32px);
+  line-height: 1.6;
+  letter-spacing: -0.03em;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
