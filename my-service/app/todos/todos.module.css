@@ -3,6 +3,9 @@
 .nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; color: #a1a1aa; }
 .nav a { color: #f4f4f5; text-decoration: none; font-size: 18px; font-weight: 700; }
 .nav a span, .header h1 span { color: #06b6d4; }
+.account { display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 20px; color: #a1a1aa; font-size: 13px; }
+.account span { min-width: 0; overflow-wrap: anywhere; }
+.account button { min-height: 44px; padding: 8px 14px; border: 1px solid #3f3f46; border-radius: 8px; background: #121214; color: #67e8f9; white-space: nowrap; }
 .header { padding: 66px 0 36px; }
 .accent { height: 4px; width: 42px; background: #06b6d4; margin-bottom: 26px; }
 .eyebrow { color: #67e8f9; font-size: 11px; font-weight: 700; letter-spacing: .18em; margin-bottom: 12px; }
